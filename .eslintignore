@@ -1,0 +1,5 @@
+lib/
+dist/
+debug/
+node_modules/
+coverage/

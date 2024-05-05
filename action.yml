@@ -1,0 +1,16 @@
+name: "Pull Request Template Filled Check"
+description: "Checks if the pull request's template is filled"
+author: "Vahid Haghighat"
+
+inputs:
+  template-address:
+    description: "The relative path to the location of the template file"
+    required: true
+    default: "./.github/pull_request_template.md"
+  token:
+    description: "Github token to retrieve the PR information"
+    required: true
+
+runs:
+  using: node20
+  main: dist/index.js
